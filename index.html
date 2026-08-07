@@ -23,9 +23,7 @@ h2{font-size:16px;color:#8b6f47;margin-top:24px;border-left:4px solid #c9b8a0;pa
 #result{display:none;background:#fffdf9;border:2px solid #c9b8a0;border-radius:10px;padding:18px;margin-top:14px}
 .score{font-size:42px;font-weight:bold;text-align:center;color:#8b6f47}
 .lvl{text-align:center;font-size:17px;font-weight:bold;margin:6px 0 14px}
-.dim{margin:7px 0;font-size:13.5px;border-bottom:1px dashed #e3d9c9;padding-bottom:6px}
-.veto{color:#b5654a;font-weight:bold}
-#overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(40,32,24,.55);display:none;z-index:99}#popup{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#fffdf9;border:2px solid #8b6f47;border-radius:12px;padding:22px;max-width:420px;width:88%;z-index:100;display:none;max-height:82vh;overflow-y:auto}
+.dim{margin:7px 0;font-size:13.5px;border-bottom:1px dashed #e3d9c9;padding-bottom:6px}#popup{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#fffdf9;border:2px solid #8b6f47;border-radius:12px;padding:22px;max-width:420px;width:88%;z-index:100;display:none;max-height:82vh;overflow-y:auto}
 #popup h3{margin:0 0 10px;color:#8b6f47;text-align:center}
 #popup .score{font-size:38px}
 #popup .dim{font-size:12.5px}
@@ -40,95 +38,86 @@ h2{font-size:16px;color:#8b6f47;margin-top:24px;border-left:4px solid #c9b8a0;pa
 <div class="q">
 <div class="qt">Q1｜出生点公共箱子</div>
 <div>出生点旁边有个没上锁的公共箱子，里面放了些基础物资。你第一反应是：</div>
-<label class="opt"><input type="radio" name="q1" value="6">看一眼不动</label>
-<label class="opt"><input type="radio" name="q1" value="4">绕开</label>
-<label class="opt"><input type="radio" name="q1" value="2">随手拿</label>
+<label class="opt"><input type="radio" name="q1">看一眼不动</label>
+<label class="opt"><input type="radio" name="q1">绕开</label>
+<label class="opt"><input type="radio" name="q1">随手拿</label>
 <textarea class="txt" id="t1" placeholder="为什么？说说你的想法…"></textarea>
-<div class="note">🔍 <b>考察：</b>对他人/公共财产的边界感<br>🧠 <b>性格映射：</b>随手拿=边界模糊；看一眼不动=克制；绕开=谨慎或社恐<br>🔑 <b>关键看：</b>回答"为什么"的理由——暴露是"不懂规矩"还是"无所谓"</div>
 </div>
 
 <div class="q">
 <div class="qt">Q2｜野外有主标记钻石箱</div>
 <div>你急需钻石做装备，在野外发现一个有<b>明显主人标记</b>的箱子，里面一大箱钻石，周围没人。你会：</div>
-<label class="opt"><input type="radio" name="q2" value="2">A. 拿走</label>
-<label class="opt"><input type="radio" name="q2" value="5">B. 只拿自己需要的</label>
-<label class="opt"><input type="radio" name="q2" value="10">C. 不动并留言告知</label>
-<label class="opt"><input type="radio" name="q2" value="0">D. 直接拆箱拿光</label>
-<div class="note">🔍 <b>考察：</b>诱惑下的诚信底线<br>🧠 <b>性格映射：</b>D=掠夺型；A/B隐瞒=机会主义；C=有规则意识且沟通<br>🔑 <b>关键看：</b>是否承认"箱子有主"及拿完是否主动告知</div>
+<label class="opt"><input type="radio" name="q2">A. 拿走</label>
+<label class="opt"><input type="radio" name="q2">B. 只拿自己需要的</label>
+<label class="opt"><input type="radio" name="q2">C. 不动并留言告知</label>
+<label class="opt"><input type="radio" name="q2">D. 直接拆箱拿光</label>
 </div><div class="q">
 <div class="qt">Q3｜资源漏洞</div>
 <div>服里有个资源漏洞可无限刷稀有材料，但服规没写死。你会：</div>
-<label class="opt"><input type="radio" name="q3" value="2">A. 默默刷</label>
-<label class="opt"><input type="radio" name="q3" value="5">B. 刷但只够自己用</label>
-<label class="opt"><input type="radio" name="q3" value="10">C. 告诉服主</label>
-<label class="opt"><input type="radio" name="q3" value="8">D. 不碰</label>
-<div class="note">🔍 <b>考察：</b>规则空白处的自律<br>🧠 <b>性格映射：</b>A=把服当提款机；C=把社区当共同资产维护<br>🔑 <b>关键看：</b>服规没写时，他是"钻空子"还是"补漏洞"</div>
+<label class="opt"><input type="radio" name="q3">A. 默默刷</label>
+<label class="opt"><input type="radio" name="q3">B. 刷但只够自己用</label>
+<label class="opt"><input type="radio" name="q3">C. 告诉服主</label>
+<label class="opt"><input type="radio" name="q3">D. 不碰</label>
 </div>
 
 <h2>二、归属感与适应力</h2>
 <div class="q">
 <div class="qt">Q4｜离线两周服变天</div>
 <div>你离线两周回来，发现老人走了一半、新玩法陌生、建筑区风格大变。你第一反应是：</div>
-<label class="opt"><input type="radio" name="q4" value="10">A. 从头学，找新人玩</label>
-<label class="opt"><input type="radio" name="q4" value="6">B. 等老人回来</label>
-<label class="opt"><input type="radio" name="q4" value="2">C. 觉得"不是我的服了"想走</label>
-<label class="opt"><input type="radio" name="q4" value="4">D. 在群里吐槽变动太大</label>
-<div class="note">🔍 <b>考察：</b>对"流动"的耐受度、归属感来源<br>🧠 <b>性格映射：</b>A=内生归属感强；C/D=依赖固定圈子<br>🔑 <b>关键看：</b>归属感绑在"人"上还是"玩法"上</div>
+<label class="opt"><input type="radio" name="q4">A. 从头学，找新人玩</label>
+<label class="opt"><input type="radio" name="q4">B. 等老人回来</label>
+<label class="opt"><input type="radio" name="q4">C. 觉得"不是我的服了"想走</label>
+<label class="opt"><input type="radio" name="q4">D. 在群里吐槽变动太大</label>
 </div>
 
 <div class="q">
 <div class="qt">Q5｜服务器合并换地图</div>
 <div>你玩了三个月，服宣布合并到另一个服，存档保留但要换地图。你：</div>
-<label class="opt"><input type="radio" name="q5" value="10">A. 跟着走</label>
-<label class="opt"><input type="radio" name="q5" value="6">B. 犹豫但留下</label>
-<label class="opt"><input type="radio" name="q5" value="2">C. 退服</label>
-<div class="note">🔍 <b>考察：</b>沉没成本承受力、长期信任<br>🧠 <b>性格映射：</b>C类是小服"定时炸弹"<br>🔑 <b>关键看：</b>能否接受"投入归零重来"而不脱服</div>
+<label class="opt"><input type="radio" name="q5">A. 跟着走</label>
+<label class="opt"><input type="radio" name="q5">B. 犹豫但留下</label>
+<label class="opt"><input type="radio" name="q5">C. 退服</label>
 </div>
 
-<h2>三、冲突与情绪</h2><div class="q">
+<h2>三、冲突与情绪</h2>
+<div class="q">
 <div class="qt">Q6｜房子被误拆</div>
 <div>你辛苦建的房子被人误拆，对方态度敷衍。你：</div>
-<label class="opt"><input type="radio" name="q6" value="10">A. 私聊沟通要赔偿</label>
-<label class="opt"><input type="radio" name="q6" value="4">B. 群里骂一顿</label>
-<label class="opt"><input type="radio" name="q6" value="6">C. 自己默默重建</label>
-<label class="opt"><input type="radio" name="q6" value="0">D. 报复性拆对方东西</label>
-<div class="note">🔍 <b>考察：</b>冲突处理模式、攻击性<br>🧠 <b>性格映射：</b>D=破坏性一票否决；B=公开化矛盾；A=成熟；C=隐忍型<br>🔑 <b>关键看：</b>冲突是"私下解决"还是"扩大化/报复"</div>
-</div>
-
-<div class="q">
+<label class="opt"><input type="radio" name="q6">A. 私聊沟通要赔偿</label>
+<label class="opt"><input type="radio" name="q6">B. 群里骂一顿</label>
+<label class="opt"><input type="radio" name="q6">C. 自己默默重建</label>
+<label class="opt"><input type="radio" name="q6">D. 报复性拆对方东西</label>
+</div><div class="q">
 <div class="qt">Q7｜服主不在两人吵架</div>
 <div>服主不在，两玩家为抢刷怪塔吵起来，你在场。你：</div>
-<label class="opt"><input type="radio" name="q7" value="10">A. 出面调解</label>
-<label class="opt"><input type="radio" name="q7" value="6">B. 围观不说话</label>
-<label class="opt"><input type="radio" name="q7" value="0">C. 煽风点火</label>
-<label class="opt"><input type="radio" name="q7" value="2">D. 拉帮结派站一边</label>
-<div class="note">🔍 <b>考察：</b>自发维护社区的责任感<br>🧠 <b>性格映射：</b>A=天然管理苗子；B=搭子型；C/D=毒性不能留<br>🔑 <b>关键看：</b>无人监督时，他是"维稳"还是"添乱"</div>
+<label class="opt"><input type="radio" name="q7">A. 出面调解</label>
+<label class="opt"><input type="radio" name="q7">B. 围观不说话</label>
+<label class="opt"><input type="radio" name="q7">C. 煽风点火</label>
+<label class="opt"><input type="radio" name="q7">D. 拉帮结派站一边</label>
 </div>
 
 <h2>四、贡献与角色</h2>
 <div class="q">
 <div class="qt">Q8｜建筑比赛角色</div>
 <div>服里组织建筑比赛，你更愿意：</div>
-<label class="opt"><input type="radio" name="q8" value="10">A. 当组织者</label>
-<label class="opt"><input type="radio" name="q8" value="8">B. 认真参与</label>
-<label class="opt"><input type="radio" name="q8" value="4">C. 随便弄弄</label>
-<label class="opt"><input type="radio" name="q8" value="2">D. 不参加</label>
-<div class="note">🔍 <b>考察：</b>主动性、角色偏好<br>🧠 <b>性格映射：</b>D类过多服就死水；A类可重点培养<br>🔑 <b>关键看：</b>他是"愿意牵头"还是"纯围观"</div>
-</div><div class="q">
+<label class="opt"><input type="radio" name="q8">A. 当组织者</label>
+<label class="opt"><input type="radio" name="q8">B. 认真参与</label>
+<label class="opt"><input type="radio" name="q8">C. 随便弄弄</label>
+<label class="opt"><input type="radio" name="q8">D. 不参加</label>
+</div>
+
+<div class="q">
 <div class="qt">Q9｜新人问五次基础操作</div>
 <div>新人一直问基础操作，你答了五次。第六次他问，你：</div>
-<label class="opt"><input type="radio" name="q9" value="10">A. 继续答</label>
-<label class="opt"><input type="radio" name="q9" value="8">B. 甩个教程链接</label>
-<label class="opt"><input type="radio" name="q9" value="2">C. 不理</label>
-<label class="opt"><input type="radio" name="q9" value="0">D. 烦了怼他</label>
-<div class="note">🔍 <b>考察：</b>利他耐心、对新人的态度<br>🧠 <b>性格映射：</b>C/D类会赶客；A类是人形新手村；B类理性可持续<br>🔑 <b>关键看：</b>对"重复提问"的容忍度</div>
+<label class="opt"><input type="radio" name="q9">A. 继续答</label>
+<label class="opt"><input type="radio" name="q9">B. 甩个教程链接</label>
+<label class="opt"><input type="radio" name="q9">C. 不理</label>
+<label class="opt"><input type="radio" name="q9">D. 烦了怼他</label>
 </div>
 
 <div class="q">
 <div class="qt">Q10｜愿意为服贡献吗</div>
 <div>你愿意为这个服做点什么（写插件、做地图、管群、拍视频）？还是只想来玩？</div>
 <textarea class="txt" id="t10" placeholder="说说你的想法…"></textarea>
-<div class="note">🔍 <b>考察：</b>价值互换意识<br>🧠 <b>性格映射：</b>纯"只想来玩"不是错，但人多服主累；理想是"玩为主+偶尔贡献"<br>🔑 <b>关键看：</b>是否意识到"服是大家的"而不只是"我的游乐场"</div>
 </div>
 
 <button class="btn" id="btnSubmit" onclick="submitTest()">提交测评</button>
@@ -149,15 +138,35 @@ h2{font-size:16px;color:#8b6f47;margin-top:24px;border-left:4px solid #c9b8a0;pa
 <div id="popDims"></div>
 <button id="okBtn" onclick="closePopup()">确认</button>
 </div><script>
-var SK="xilan_done_v4";
+var SK="xilan_done_v8";
 function $(id){return document.getElementById(id)}
 
-function submitTest(){
+// 分值完全在 JS 内部，HTML 选项不含任何分值，用户看不到答案/分值
+var SCORES={
+  "1":{"看一眼不动":6,"绕开":4,"随手拿":2},
+  "2":{"A. 拿走":2,"B. 只拿自己需要的":5,"C. 不动并留言告知":10,"D. 直接拆箱拿光":0},
+  "3":{"A. 默默刷":2,"B. 刷但只够自己用":5,"C. 告诉服主":10,"D. 不碰":8},
+  "4":{"A. 从头学，找新人玩":10,"B. 等老人回来":6,"C. 觉得\"不是我的服了\"想走":2,"D. 在群里吐槽变动太大":4},
+  "5":{"A. 跟着走":10,"B. 犹豫但留下":6,"C. 退服":2},
+  "6":{"A. 私聊沟通要赔偿":10,"B. 群里骂一顿":4,"C. 自己默默重建":6,"D. 报复性拆对方东西":0},
+  "7":{"A. 出面调解":10,"B. 围观不说话":6,"C. 煽风点火":0,"D. 拉帮结派站一边":2},
+  "8":{"A. 当组织者":10,"B. 认真参与":8,"C. 随便弄弄":4,"D. 不参加":2},
+  "9":{"A. 继续答":10,"B. 甩个教程链接":8,"C. 不理":2,"D. 烦了怼他":0}
+};
+
+function getScore(qNum){
+  var sel=document.querySelector('input[name="q'+qNum+'"]:checked');
+  if(!sel) return null;
+  var label=sel.parentNode.textContent.trim();
+  var map=SCORES[String(qNum)];
+  if(map && map.hasOwnProperty(label)) return map[label];
+  return 0;
+}function submitTest(){
   var a={};
-  for(var i=1;i<=10;i++){
-    var s=document.querySelector('input[name="q'+i+'"]:checked');
-    if(!s){alert("还有第 "+i+" 题没选，请补全后再提交");return}
-    a[i]=parseInt(s.value);
+  for(var i=1;i<=9;i++){
+    var s=getScore(i);
+    if(s===null){alert("还有第 "+i+" 题没选，请补全后再提交");return}
+    a[i]=s;
   }
   var integrity=Math.round((a[2]/10)*15+(a[3]/10)*15);
   var boundary=Math.round((a[1]/6)*10);
@@ -175,7 +184,7 @@ function dimRow(name,raw,max){
   var pct=Math.round(raw/max*100);
   var ev=pct>=80?"优秀":pct>=60?"良好":pct>=40?"一般":"偏低";
   return '<div class="dim">'+name+'：'+raw+'/'+max+'分（'+pct+'%）→ 评价 '+ev+'</div>';
-}function showResult(d,total,veto){
+    }function showResult(d,total,veto){
   var lvl,vcolor;
   if(veto){lvl="❌ 婉拒（一票否决）";vcolor="#b5654a"}
   else if(total>=80){lvl="🌟 核心成员候选，重点带";vcolor="#5a7d4a"}
@@ -261,3 +270,5 @@ function closePopup(){
 </script>
 </body>
 </html>
+.veto{color:#b5654a;font-weight:bold}
+#overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(40,32,24,.55);display:none;z-index:99}
